@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions namespace="http://www.signavio.com/dmn/1.2/diagram/8679066222674efc9460067e0ce00008.xml" exporterVersion="14.11.5" name="database" id="id-0113f73f630e4535860495642e7c904e" sigExt:revisionNumber="1" sigExt:revisionId="c9cab456c99b422c8e7bd9d635f3f34f" xmlns="http://www.signavio.com/dmn/1.2/diagram/8679066222674efc9460067e0ce00008.xml" xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns:sigExt="http://www.signavio.com/schema/dmn/1.2/" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/">
+    <extensionElements/>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="c" id="id-bf4fa84bb5989fb830f9095cd06d5b8a" label="C">
+        <typeRef>string</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="b" id="id-9546b58a0e9bb5555fdc8deacc22cb03" label="B">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="dataBase" id="id-854a35461c6ac617f2337063fd71bf42" label="DataBase">
+        <typeRef>string</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="newElement" id="id-1412ab13b34eebcfff5b84acd0daaa54" label="">
+        <typeRef>string</typeRef>
+    </itemDefinition>
+    <inputData name="b" id="id-647672a5e9ebdf546c3041152cedc667" label="B" sigExt:diagramId="8679066222674efc9460067e0ce00008" sigExt:shapeId="sid-3132DE83-C40D-4880-B787-24C50F176089">
+        <extensionElements/>
+        <variable typeRef="b" name="b" id="id-647672a5e9ebdf546c3041152cedc667_variable"/>
+    </inputData>
+    <inputData name="dataBase" id="id-327a2493bd1724fb43ee6552c423bfa5" label="DataBase" sigExt:diagramId="8679066222674efc9460067e0ce00008" sigExt:shapeId="sid-F2FF3394-D7BB-4965-84CB-04DD01A8657F">
+        <extensionElements/>
+        <variable typeRef="dataBase" name="dataBase" id="id-327a2493bd1724fb43ee6552c423bfa5_variable"/>
+    </inputData>
+    <decision name="c" id="id-6c0bdc41103a5a5c86ec6a26c54cca3f" label="C" sigExt:diagramId="8679066222674efc9460067e0ce00008" sigExt:shapeId="sid-AE9D282E-EE6E-4D16-A86E-DC3E59E88181">
+        <extensionElements/>
+        <variable typeRef="c" name="c" id="id-6c0bdc41103a5a5c86ec6a26c54cca3f_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-327a2493bd1724fb43ee6552c423bfa5"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-647672a5e9ebdf546c3041152cedc667"/>
+        </informationRequirement>
+        <decisionTable hitPolicy="UNIQUE">
+            <input id="id-9f3bdde4a37651fb69dcb80e867d56c9" label="DataBase">
+                <inputExpression>
+                    <text>dataBase</text>
+                </inputExpression>
+            </input>
+            <input id="id-962c842aa794698c081b955d9fdd5b10" label="B">
+                <inputExpression>
+                    <text>b</text>
+                </inputExpression>
+            </input>
+            <output name="c" typeRef="newElement" id="id-cb50cdbd6ede9f222071898f5fd3a32e" label="C"/>
+            <annotation name="New Annotation"/>
+            <rule id="id-f2c32e77c49316c511113b7d1a7b25c6">
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>dataBase</text>
+                </outputEntry>
+                <annotationEntry>
+                    <text>string(-)</text>
+                </annotationEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+</definitions>

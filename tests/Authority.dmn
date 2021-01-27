@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions namespace="http://www.signavio.com/dmn/1.2/diagram/e1d8c5dbf1114e818bf6193755c695a2.xml" exporterVersion="14.11.5" name="Authority" id="id-e2a3aceedff549109b41717237f1c160" sigExt:revisionNumber="3" sigExt:revisionId="f648e14d06234a36b261763335a20786" xmlns="http://www.signavio.com/dmn/1.2/diagram/e1d8c5dbf1114e818bf6193755c695a2.xml" xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns:sigExt="http://www.signavio.com/schema/dmn/1.2/" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/">
+    <extensionElements/>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="b" id="id-94647c1bf71badf342136e8636afed12" label="B">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="a" id="id-edb1b4571afd31ae7c2769b2f7a1c1de" label="A">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="c" id="id-d9c4ec90de54349255ce52a2b9c44068" label="C">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="newElement" id="id-5def7a5a9272a77e4b71645b98245908" label="">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <inputData name="b" id="id-2128630f501bded38e493fbc459e182b" label="B" sigExt:diagramId="e1d8c5dbf1114e818bf6193755c695a2" sigExt:shapeId="sid-3C759C58-9D54-4F5A-B513-467A6862FFA8">
+        <extensionElements/>
+        <variable typeRef="b" name="b" id="id-2128630f501bded38e493fbc459e182b_variable"/>
+    </inputData>
+    <inputData name="a" id="id-f7a7890a4b926b2019260b6052ff651e" label="A" sigExt:diagramId="e1d8c5dbf1114e818bf6193755c695a2" sigExt:shapeId="sid-E6D1390E-9C90-4851-AB6A-F981910601C8">
+        <extensionElements/>
+        <variable typeRef="a" name="a" id="id-f7a7890a4b926b2019260b6052ff651e_variable"/>
+    </inputData>
+    <decision name="c" id="id-89ff1600fe9a3369b8b48993bce8a2db" label="C" sigExt:diagramId="e1d8c5dbf1114e818bf6193755c695a2" sigExt:shapeId="sid-8B5D6170-74E4-4845-AE2F-3F62976EA554">
+        <extensionElements/>
+        <variable typeRef="c" name="c" id="id-89ff1600fe9a3369b8b48993bce8a2db_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-f7a7890a4b926b2019260b6052ff651e"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-2128630f501bded38e493fbc459e182b"/>
+        </informationRequirement>
+        <authorityRequirement>
+            <requiredAuthority href="#id-4ce20bf9e7d9613a7800163cea26ac09"/>
+        </authorityRequirement>
+        <decisionTable hitPolicy="UNIQUE">
+            <input id="id-99122c060620f5ff8dadc985f88dedaf" label="B">
+                <inputExpression>
+                    <text>b</text>
+                </inputExpression>
+            </input>
+            <input id="id-07d691717ee2d1da3333288224ed0d42" label="A">
+                <inputExpression>
+                    <text>a</text>
+                </inputExpression>
+            </input>
+            <output name="c" typeRef="newElement" id="id-79b09559e28050a7ee7c54804f2c9922" label="C"/>
+            <annotation name="New Annotation"/>
+            <rule id="id-d3575ea9f94aa90d2defc1cdd1e0f8b8">
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>(a*b)</text>
+                </outputEntry>
+                <annotationEntry>
+                    <text>string(-)</text>
+                </annotationEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+    <knowledgeSource name="teacher" id="id-4ce20bf9e7d9613a7800163cea26ac09" label="Teacher"/>
+</definitions>

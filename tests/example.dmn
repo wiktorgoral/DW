@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions namespace="http://www.signavio.com/dmn/1.2/diagram/50f8ae08ed6f43ada3285954c65df1c2.xml" exporterVersion="14.11.5" name="example" id="id-a271d914450c45638066b068fe464649" sigExt:revisionNumber="3" sigExt:revisionId="314e6b4584b44346a438d253f9b03511" xmlns="http://www.signavio.com/dmn/1.2/diagram/50f8ae08ed6f43ada3285954c65df1c2.xml" xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns:sigExt="http://www.signavio.com/schema/dmn/1.2/" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/">
+    <extensionElements/>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="newElement2" id="id-a806633d38a3a48a8529acc476890201" label="">
+        <typeRef>string</typeRef>
+        <allowedValues>
+            <text>"Steak","Flakes"</text>
+        </allowedValues>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="children" id="id-535776201f596eb0b24bc9e0bdabda5f" label="Children">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="newElement" id="id-df55e51b3260bbb13604d6c200bce1c4" label="">
+        <typeRef>string</typeRef>
+        <allowedValues>
+            <text>"ABC"</text>
+        </allowedValues>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="drinks" id="id-ee7a3c0ae1c11e2b086e1f674e9ca03a" label="Drinks">
+        <typeRef>string</typeRef>
+        <allowedValues>
+            <text>"Vine","Cola","Water"</text>
+        </allowedValues>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="location" id="id-4c7b6c24a119ec6da297a45e893427f4" label="Location">
+        <typeRef>string</typeRef>
+        <allowedValues>
+            <text>"ABC"</text>
+        </allowedValues>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="newElement3" id="id-3918f5e18cf689d5bf0d4c68f190ff7f" label="">
+        <typeRef>string</typeRef>
+        <allowedValues>
+            <text>"ABCC"</text>
+        </allowedValues>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="numberOfGuests" id="id-a41cbb9d669cea12983644e32fa3fe81" label="Number of guests">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="food" id="id-1a514d248669552757f13c1049283731" label="Food">
+        <typeRef>string</typeRef>
+        <allowedValues>
+            <text>"Steak","Flakes"</text>
+        </allowedValues>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="season" id="id-b264f6f7faf2628a199a61e54dcd0947" label="Season">
+        <typeRef>string</typeRef>
+        <allowedValues>
+            <text>"Winter","Summer","Fall","Spring"</text>
+        </allowedValues>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="eventOffer" id="id-03bb0684cac1004f81040bcd42ba955e" label="Event offer">
+        <typeRef>string</typeRef>
+        <allowedValues>
+            <text>"ABCC"</text>
+        </allowedValues>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="sleepingFacilities" id="id-e3b47a48d34b7e4bbbf51b7fb9afbd94" label="Sleeping facilities">
+        <typeRef>string</typeRef>
+        <allowedValues>
+            <text>"Good","Bad"</text>
+        </allowedValues>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="budget" id="id-7dba91fbd8f58a12232e50133cd98667" label="Budget">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="newElement4" id="id-614eaf6f2ce7f1f8c75c5d46d91f10f5" label="">
+        <typeRef>string</typeRef>
+        <allowedValues>
+            <text>"Vine","Cola","Water"</text>
+        </allowedValues>
+    </itemDefinition>
+    <inputData name="budget" id="id-5df131ee6c0e079872f63e3e6289a4b2" label="Budget" sigExt:diagramId="50f8ae08ed6f43ada3285954c65df1c2" sigExt:shapeId="sid-90F9009B-79BD-4E0C-B494-9FCE5EBE3139">
+        <extensionElements/>
+        <variable typeRef="budget" name="budget" id="id-5df131ee6c0e079872f63e3e6289a4b2_variable"/>
+    </inputData>
+    <inputData name="season" id="id-84176ff5320fd248dcd82d3deed28892" label="Season" sigExt:diagramId="50f8ae08ed6f43ada3285954c65df1c2" sigExt:shapeId="sid-9837D11E-8294-4FA6-9D8B-CE5B909714BE">
+        <extensionElements/>
+        <variable typeRef="season" name="season" id="id-84176ff5320fd248dcd82d3deed28892_variable"/>
+    </inputData>
+    <inputData name="numberOfGuests" id="id-3604f1d937e0ade76c146e9afb91b0ad" label="Number of guests" sigExt:diagramId="50f8ae08ed6f43ada3285954c65df1c2" sigExt:shapeId="sid-49419DC8-76AE-40F0-A3FF-837D5FFD7998">
+        <extensionElements/>
+        <variable typeRef="numberOfGuests" name="numberOfGuests" id="id-3604f1d937e0ade76c146e9afb91b0ad_variable"/>
+    </inputData>
+    <inputData name="sleepingFacilities" id="id-cd5dc82f9fcd5b86d8bee7e12180ea6e" label="Sleeping facilities" sigExt:diagramId="50f8ae08ed6f43ada3285954c65df1c2" sigExt:shapeId="sid-09DE40C9-0054-49A0-B448-6A4985BA9DEA">
+        <extensionElements/>
+        <variable typeRef="sleepingFacilities" name="sleepingFacilities" id="id-cd5dc82f9fcd5b86d8bee7e12180ea6e_variable"/>
+    </inputData>
+    <inputData name="children" id="id-01b565b56390ee806c48011c7a24835f" label="Children" sigExt:diagramId="50f8ae08ed6f43ada3285954c65df1c2" sigExt:shapeId="sid-680B8D47-6FA1-4A7F-BF0C-092736C3A4C1">
+        <extensionElements/>
+        <variable typeRef="children" name="children" id="id-01b565b56390ee806c48011c7a24835f_variable"/>
+    </inputData>
+    <decision name="location" id="id-af1407f76e96069982d5099755aae6f8" label="Location" sigExt:diagramId="50f8ae08ed6f43ada3285954c65df1c2" sigExt:shapeId="sid-2F7F12AB-8613-458C-90FF-831877735530">
+        <extensionElements/>
+        <variable typeRef="location" name="location" id="id-af1407f76e96069982d5099755aae6f8_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-01b565b56390ee806c48011c7a24835f"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-84176ff5320fd248dcd82d3deed28892"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-cd5dc82f9fcd5b86d8bee7e12180ea6e"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-3604f1d937e0ade76c146e9afb91b0ad"/>
+        </informationRequirement>
+        <authorityRequirement>
+            <requiredAuthority href="#id-42cba4008b6285c6d89bea9a9523814a"/>
+        </authorityRequirement>
+        <decisionTable hitPolicy="UNIQUE">
+            <input id="id-2b9aa4b599bf42c1481e8133f724c56f" label="Sleeping facilities">
+                <inputExpression>
+                    <text>sleepingFacilities</text>
+                </inputExpression>
+            </input>
+            <input id="id-e03a21406eac3302347d59b687ea0722" label="Children">
+                <inputExpression>
+                    <text>children</text>
+                </inputExpression>
+            </input>
+            <input id="id-e877c867e4de1b7f6c1b05d31638f559" label="Number of guests">
+                <inputExpression>
+                    <text>numberOfGuests</text>
+                </inputExpression>
+            </input>
+            <input id="id-e72eec2fc5f09c1ac63f5cc9a34fbca1" label="Season">
+                <inputExpression>
+                    <text>season</text>
+                </inputExpression>
+            </input>
+            <output name="location" typeRef="newElement" id="id-0511e69d5d96e674f1e6c8a59dd56895" label="Location"/>
+            <annotation name="New Annotation"/>
+            <rule id="id-ec1a802537f73e9d172d618645f5a42e">
+                <inputEntry>
+                    <text>"Bad"</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>&lt; 5</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>&lt; 5</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>"Winter"</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>"ABC"</text>
+                </outputEntry>
+                <annotationEntry>
+                    <text>string(-)</text>
+                </annotationEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+    <decision name="food" id="id-24057e9686bf4ef0bb8f11a797ee5601" label="Food" sigExt:diagramId="50f8ae08ed6f43ada3285954c65df1c2" sigExt:shapeId="sid-BCA8B9B8-C6A8-4120-AD65-FD5B2E66F4EC">
+        <extensionElements/>
+        <variable typeRef="food" name="food" id="id-24057e9686bf4ef0bb8f11a797ee5601_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-84176ff5320fd248dcd82d3deed28892"/>
+        </informationRequirement>
+        <authorityRequirement>
+            <requiredAuthority href="#id-ac37fdcc3a274b0c8ede8aafa9e5af0a"/>
+        </authorityRequirement>
+        <decisionTable hitPolicy="UNIQUE">
+            <input id="id-f670954aee2139996f90ce1c4e3b67df" label="Season">
+                <inputExpression>
+                    <text>season</text>
+                </inputExpression>
+            </input>
+            <output name="food" typeRef="newElement2" id="id-5c3845ea50b1e6be88b84c4eaf30bff7" label="Food"/>
+            <annotation name="New Annotation"/>
+            <rule id="id-bb7de0b33946612d1743c6c03e425071">
+                <inputEntry>
+                    <text>"Winter"</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>"Steak"</text>
+                </outputEntry>
+                <annotationEntry>
+                    <text>string(-)</text>
+                </annotationEntry>
+            </rule>
+            <rule id="id-7d238debfa21e95180f52110ccdc1485">
+                <inputEntry>
+                    <text>"Summer"</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>"Steak"</text>
+                </outputEntry>
+                <annotationEntry>
+                    <text>string(-)</text>
+                </annotationEntry>
+            </rule>
+            <rule id="id-b05705ed56b3293491fe51b05f7e6a07">
+                <inputEntry>
+                    <text>"Fall"</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>"Flakes"</text>
+                </outputEntry>
+                <annotationEntry>
+                    <text>string(-)</text>
+                </annotationEntry>
+            </rule>
+            <rule id="id-5ddac821ccea109d760bb7669db8ca22">
+                <inputEntry>
+                    <text>"Spring"</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>"Flakes"</text>
+                </outputEntry>
+                <annotationEntry>
+                    <text>string(-)</text>
+                </annotationEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+    <decision name="drinks" id="id-0232ea48884a25edaf520ace6e7f077f" label="Drinks" sigExt:diagramId="50f8ae08ed6f43ada3285954c65df1c2" sigExt:shapeId="sid-FFA6263A-3265-4FBB-BFF0-B23A12AC240C">
+        <extensionElements/>
+        <variable typeRef="drinks" name="drinks" id="id-0232ea48884a25edaf520ace6e7f077f_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-01b565b56390ee806c48011c7a24835f"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-24057e9686bf4ef0bb8f11a797ee5601"/>
+        </informationRequirement>
+        <authorityRequirement>
+            <requiredAuthority href="#id-ac37fdcc3a274b0c8ede8aafa9e5af0a"/>
+        </authorityRequirement>
+        <decisionTable hitPolicy="UNIQUE">
+            <input id="id-2929af7facf714f7ae5a528dd498d25d" label="Children">
+                <inputExpression>
+                    <text>children</text>
+                </inputExpression>
+            </input>
+            <input id="id-4966ec937b3fc0ef07dc0860aaafe65a" label="Food">
+                <inputExpression>
+                    <text>food</text>
+                </inputExpression>
+            </input>
+            <output name="drinks" typeRef="newElement4" id="id-520a5f920767c1354c61ecea03bf8bd9" label="Drinks"/>
+            <annotation name="New Annotation"/>
+            <rule id="id-e39000be28e5c4a00e0e7f8bb406eafd">
+                <inputEntry>
+                    <text>&lt; 2</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>"Steak"</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>"Vine"</text>
+                </outputEntry>
+                <annotationEntry>
+                    <text>string(-)</text>
+                </annotationEntry>
+            </rule>
+            <rule id="id-9499b77633f13c6800d590ca8712347f">
+                <inputEntry>
+                    <text>5</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>"Flakes"</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>"Cola"</text>
+                </outputEntry>
+                <annotationEntry>
+                    <text>string(-)</text>
+                </annotationEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+    <decision name="eventOffer" id="id-fd6d98634ea015370e147534418c4e78" label="Event offer" sigExt:diagramId="50f8ae08ed6f43ada3285954c65df1c2" sigExt:shapeId="sid-D17134BF-C9E8-428A-AF5C-57EB1749D01F">
+        <extensionElements/>
+        <variable typeRef="eventOffer" name="eventOffer" id="id-fd6d98634ea015370e147534418c4e78_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-5df131ee6c0e079872f63e3e6289a4b2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-af1407f76e96069982d5099755aae6f8"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-0232ea48884a25edaf520ace6e7f077f"/>
+        </informationRequirement>
+        <decisionTable hitPolicy="UNIQUE">
+            <input id="id-cd29012b5dcee5092fd143007ef7299d" label="Drinks">
+                <inputExpression>
+                    <text>drinks</text>
+                </inputExpression>
+            </input>
+            <input id="id-5fba15149f05f42362048fac8270b75d" label="Location">
+                <inputExpression>
+                    <text>location</text>
+                </inputExpression>
+            </input>
+            <input id="id-e35484e79137e528fc8c259b4d4eb0d4" label="Budget">
+                <inputExpression>
+                    <text>budget</text>
+                </inputExpression>
+            </input>
+            <output name="eventOffer" typeRef="newElement3" id="id-b901b9a0adce03eca8ca872c0715ed64" label="Event offer"/>
+            <annotation name="New Annotation"/>
+            <rule id="id-05e03f21b1cd15d62923bb4a81355055">
+                <inputEntry>
+                    <text>"Vine"</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>"ABC"</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>&lt; 500</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>"ABCC"</text>
+                </outputEntry>
+                <annotationEntry>
+                    <text>string(-)</text>
+                </annotationEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+    <knowledgeSource name="trends" id="id-ac37fdcc3a274b0c8ede8aafa9e5af0a" label="Trends"/>
+    <knowledgeSource name="eventManager" id="id-42cba4008b6285c6d89bea9a9523814a" label="Event manager"/>
+</definitions>

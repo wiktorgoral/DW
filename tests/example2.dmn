@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions namespace="http://www.signavio.com/dmn/1.2/diagram/2d1de6bf6dea4fc1a063d8a2d1041a18.xml" exporterVersion="14.11.5" name="example2" id="id-c16b856f4a144906b0498dfd10437376" sigExt:revisionNumber="2" sigExt:revisionId="b91fccd22abe481c9210826ff072410d" xmlns="http://www.signavio.com/dmn/1.2/diagram/2d1de6bf6dea4fc1a063d8a2d1041a18.xml" xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns:sigExt="http://www.signavio.com/schema/dmn/1.2/" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/">
+    <extensionElements/>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="requestedProduct" id="id-eca0f30bb1d2d17573b70f6c1dee3f99" label="Requested Product">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="newElement" id="id-e8ff8a5628ec2f87eff7fd80d811df33" label="">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="routingDecision" id="id-c1f00259dc3fbbb92a3ab452486645fc" label="Routing Decision">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="newElement2" id="id-095c5f6a0906b2694dfdf62507853805" label="">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="applicant" id="id-81cb6582aad3d27e903113c160651931" label="Applicant">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <itemDefinition typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" isCollection="false" name="bureauStrategyDecision" id="id-326b582adc472cb52483b8892b215319" label="Bureau Strategy Decision">
+        <typeRef>number</typeRef>
+    </itemDefinition>
+    <inputData name="requestedProduct" id="id-c6ddd6ad77826ef20871a070f60534fc" label="Requested Product" sigExt:diagramId="2d1de6bf6dea4fc1a063d8a2d1041a18" sigExt:shapeId="sid-CF67244D-F6A7-4DC0-B2FF-F3D43D01E744">
+        <extensionElements/>
+        <variable typeRef="requestedProduct" name="requestedProduct" id="id-c6ddd6ad77826ef20871a070f60534fc_variable"/>
+    </inputData>
+    <inputData name="applicant" id="id-2f93d473ef1c6b8cad207d8c9dc7b24b" label="Applicant" sigExt:diagramId="2d1de6bf6dea4fc1a063d8a2d1041a18" sigExt:shapeId="sid-A5CA9EBF-3AB4-467B-BDEB-87FCD77F214C">
+        <extensionElements/>
+        <variable typeRef="applicant" name="applicant" id="id-2f93d473ef1c6b8cad207d8c9dc7b24b_variable"/>
+    </inputData>
+    <decision name="routingDecision" id="id-f36777eb77a37863e5e929115131d470" label="Routing Decision" sigExt:diagramId="2d1de6bf6dea4fc1a063d8a2d1041a18" sigExt:shapeId="sid-805EBA05-2D48-459C-87F5-131EEEE38A1F">
+        <extensionElements/>
+        <variable typeRef="routingDecision" name="routingDecision" id="id-f36777eb77a37863e5e929115131d470_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-c6ddd6ad77826ef20871a070f60534fc"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-2f93d473ef1c6b8cad207d8c9dc7b24b"/>
+        </informationRequirement>
+        <authorityRequirement>
+            <requiredAuthority href="#id-c40444e6bf28e9a3534664cc1b4068f8"/>
+        </authorityRequirement>
+        <decisionTable hitPolicy="UNIQUE">
+            <input id="id-9d1ce33d89f6a81bef4ddbb440041e8a" label="Requested Product">
+                <inputExpression>
+                    <text>requestedProduct</text>
+                </inputExpression>
+            </input>
+            <input id="id-50cc7f07f5eeec4c9b7ce9cb002393f9" label="Applicant">
+                <inputExpression>
+                    <text>applicant</text>
+                </inputExpression>
+            </input>
+            <output name="routingDecision" typeRef="newElement" id="id-1983b7aba56d5bba7f87f84cec689404" label="Routing Decision"/>
+            <annotation name="New Annotation"/>
+            <rule id="id-30a88b69447641ee8bf3263ac9fd6a75">
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>(requestedProduct+applicant)</text>
+                </outputEntry>
+                <annotationEntry>
+                    <text>string(-)</text>
+                </annotationEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+    <decision name="bureauStrategyDecision" id="id-17ab55997ede2d049e09e3c10150bd4f" label="Bureau Strategy Decision" sigExt:diagramId="2d1de6bf6dea4fc1a063d8a2d1041a18" sigExt:shapeId="sid-E96CE164-FB70-4DE3-8BAF-C78B77920A2F">
+        <extensionElements/>
+        <variable typeRef="bureauStrategyDecision" name="bureauStrategyDecision" id="id-17ab55997ede2d049e09e3c10150bd4f_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-c6ddd6ad77826ef20871a070f60534fc"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-2f93d473ef1c6b8cad207d8c9dc7b24b"/>
+        </informationRequirement>
+        <authorityRequirement>
+            <requiredAuthority href="#id-d2b063a2f97abe56621681d687c0022d"/>
+        </authorityRequirement>
+        <decisionTable hitPolicy="UNIQUE">
+            <input id="id-aff35c4556c8aa6cfa3695850e13ae07" label="Requested Product">
+                <inputExpression>
+                    <text>requestedProduct</text>
+                </inputExpression>
+            </input>
+            <input id="id-9f2e4d297dee3e16de46ee45f8ca3797" label="Applicant">
+                <inputExpression>
+                    <text>applicant</text>
+                </inputExpression>
+            </input>
+            <output name="bureauStrategyDecision" typeRef="newElement2" id="id-982f40b998174bd0845c11491a983e05" label="Bureau Strategy Decision"/>
+            <annotation name="New Annotation"/>
+            <rule id="id-77be7c58fc30fcab3c3c7f32ce55c299">
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>(requestedProduct*applicant)</text>
+                </outputEntry>
+                <annotationEntry>
+                    <text>string(-)</text>
+                </annotationEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+    <knowledgeSource name="routingRegulationDocuments" id="id-c40444e6bf28e9a3534664cc1b4068f8" label="Routing Regulation Documents"/>
+    <knowledgeSource name="bureauStrategyRegulationDocuments" id="id-d2b063a2f97abe56621681d687c0022d" label="Bureau Strategy Regulation Documents"/>
+</definitions>

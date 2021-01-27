@@ -1,0 +1,48 @@
+digraph {
+	location [label=location image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	children [label=children image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	children -> location
+	location [label=location image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	season [label=season image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	season -> location
+	location [label=location image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	sleepingFacilities [label=sleepingFacilities image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	sleepingFacilities -> location
+	location [label=location image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	numberOfGuests [label=numberOfGuests image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	numberOfGuests -> location
+	food [label=food image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	season [label=season image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	season -> food
+	drinks [label=drinks image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	children [label=children image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	children -> drinks
+	drinks [label=drinks image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	food [label=food image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	food -> drinks
+	eventOffer [label=eventOffer image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	budget [label=budget image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	budget -> eventOffer
+	eventOffer [label=eventOffer image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	location [label=location image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	location -> eventOffer
+	eventOffer [label=eventOffer image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	drinks [label=drinks image="c:\Users\wikto\Desktop\DW\dmn_python-0.1.4\dmn_python-0.1.4\library\img\task.png" shape=none]
+	drinks -> eventOffer
+	subgraph cluster_eventManager {
+		edge [style=invis]
+		season -> location
+		label=eventManager
+	}
+	subgraph cluster_trends {
+		edge [style=invis]
+		season -> location
+		season -> food
+		children -> drinks
+		label=trends
+	}
+	end [fillcolor=black shape=circle style=filled]
+	eventOffer -> end
+	start [shape=doublecircle]
+	start -> budget
+}

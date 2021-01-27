@@ -8,7 +8,7 @@ import os
 from collections import defaultdict 
 
 
-dmn_path = 'C:\\Users\\wikto\\Desktop\\DW\\tests\\example.dmn'
+dmn_path = ''
 model = DMNImport.load_model_from_xml(dmn_path)
 graph = gv.Digraph()
 
